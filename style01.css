@@ -50,3 +50,8 @@ img {
 .emojis {
     font-size: 24px;
 }
+
+#gradient_top {
+    background-image: linear-gradient(blue, white);
+
+}
