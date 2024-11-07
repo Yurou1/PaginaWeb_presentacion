@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background:linear-gradient(to top, grey, white);
+    background:linear-gradient(to top, rgb(221, 221, 221), rgb(121, 121, 121));
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    
 }
 
 .container {
@@ -17,7 +17,13 @@ body {
     max-width: 600px;
     width: 100%;
     text-align: center;
+   
 }
+
+
+
+
+
 
 h1 {
     color: #333;
@@ -53,6 +59,72 @@ img {
 
 #gradient_top {
     height: 100px;
-    background-image: linear-gradient(blue , grey);
+    background-image: linear-gradient(rgb(0, 4, 255) , rgb(0, 183, 255));
+    animation: animLeft 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    position: relative;-
+
+}
+
+/*DIVs*/
+
+div {
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+#Titulo {
+    animation: animRight 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    position: relative;
+
+    background-color: white;
+
+}
+
+#Parkr {
+    animation: animLeft 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    position: relative;
+
+    background-color: white;
+
+}
+
+#Progrm {
+    animation: animRight 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    position: relative;
+
+    background-color: white;
+
+}
+
+#Gym {
+    animation: animLeft 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    position: relative;
+
+    background-color: white;
+
+}
+
+
+
+
+@keyframes animLeft {
+    from{left: 100%}
+    to{left: 0px}
+
+}
+
+@keyframes animRight {
+    from{right: 100%}
+    to{right: 0px}
 
 }
